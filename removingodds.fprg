@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ANIKET"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-12 02:08:21 PM"/>
+        <attribute name="created" value="UmFnaHUgcmFtO0xBUFRPUC0wS0FGODA4QTsyMDIwLTEyLTEyOzAyOjAzOjU4IFBNOzMxMTk="/>
+        <attribute name="edited" value="UmFnaHUgcmFtO0xBUFRPUC0wS0FGODA4QTsyMDIwLTEyLTEyOzAyOjA4OjIxIFBNOzE7MzIyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="True" size="10"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the size of an array (less than 10)&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the elements in the Array&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+                <if expression="a[i]%2!=0">
+                    <then>
+                        <assign variable="a[i]" expression="0"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;The new array without odd numbers is:&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
