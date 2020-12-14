@@ -13,6 +13,6 @@
   * Assign **num=num/10**
 * In the while condition :-
   * If **sum=x** is *true*, then it is an **Armstrong Number**.
-  * If **result=n** is *false*, then it is **Not an Armstrong Number**.
+  * If **sum=x** is *false*, then it is **Not an Armstrong Number**.
 
 ![Flowchart](https://github.com/raghutheram/Cognizance2020/blob/master/Task-6/Screenshot%20(334).png?raw=true)
